@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QUIZ>
+  <QUESTION>
+    <TEXT>¿Qué es html?</TEXT>
+    <CORRECT>a</CORRECT>
+    <OPTION__A>Un lenguaje de maquetado de hipertexto</OPTION__A>
+    <OPTION__B>Un lenguaje de programación</OPTION__B>
+    <OPTION__C>No sé</OPTION__C>
+  </QUESTION>
+  <QUESTION>
+    <TEXT>Es la etiqueta que define un documento HTML</TEXT>
+    <CORRECT>b</CORRECT>
+    <OPTION__A>body</OPTION__A>
+    <OPTION__B>html</OPTION__B>
+    <OPTION__C>footer</OPTION__C>
+  </QUESTION>
+  <QUESTION>
+    <TEXT>Etiqueta usada para presentar el contenido de un página web</TEXT>
+    <CORRECT>c</CORRECT>
+    <OPTION__A>head</OPTION__A>
+    <OPTION__B>title</OPTION__B>
+    <OPTION__C>body</OPTION__C>
+  </QUESTION>
+  <QUESTION>
+    <TEXT>Se utiliza para enlazar a otro documento html</TEXT>
+    <CORRECT>a</CORRECT>
+    <OPTION__A>a</OPTION__A>
+    <OPTION__B>button</OPTION__B>
+    <OPTION__C>table</OPTION__C>
+  </QUESTION>
+  <QUESTION>
+    <TEXT>Es la etiqueta usada para crear tablas en html</TEXT>
+    <CORRECT>c</CORRECT>
+    <OPTION__A>form</OPTION__A>
+    <OPTION__B>div</OPTION__B>
+    <OPTION__C>table</OPTION__C>
+  </QUESTION>
+</QUIZ>
