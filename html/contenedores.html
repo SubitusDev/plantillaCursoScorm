@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Plantilla Scorm</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+  <body>
+    <div id="header" class="jumbotron text-center">
+      <h1>Contenedores</h1>
+      <p>Son elementos que encapsulan otros elementos en su interior.</p>
+    </div>
+
+    <div id="content" class="container mb-5">
+      <div class="row">
+        <p>
+          Los distintos contenedores que no dejan de ser más que un <code>&lt;div&gt;</code> pero que implícitamente incorporan cierto significado.
+          <br>
+          Los elementos contenedores son los siguientes:
+        </p>
+        <br>
+
+
+      </div>
+      <div class="row">
+        <ul>
+          <li>address</li>
+          <li>article</li>
+          <li>aside</li>
+          <li>div</li>
+          <li>footer</li>
+          <li>header</li>
+          <li>main</li>
+          <li>nav</li>
+          <li>section</li>
+        </ul>
+
+      </div>
+      <p>Ejemplos:</p>
+      <div class="row">
+
+        <div >
+          <div class="card" >
+            <div class="card-header">address</div>
+            <div class="card-body">
+
+              <p>
+                Define la información de contacto del autor / propietario de un documento o artículo.
+                <br>
+                La información de contacto puede ser una dirección de correo electrónico, URL, dirección física, número de teléfono, identificador de redes sociales, etc.
+                <br>
+                Suele aparecer en cursiva y los navegadores siempre añadirán un salto de línea antes y después del elemento.
+                <br>
+                Ejemplo:
+              </p>
+              <div class="p-2 mb-2" style="background-color: #d9f5e0;">
+                <address>
+                  Escrito por <a href="mailto:contacto@subitus.com" target="_blank">Subitus</a>.<br>
+                  Visitanos en:<br>
+                  subitus.com<br>
+                  Topografos 7. piso 12, Col. Escandón CDMX<br>
+                  México
+                </address>
+              </div>
+              <div class="container p-3 bg-info">
+                <pre>
+                <code class="text-white">
+                  &lt;address&gt;
+                    Escrito por &lt;a href="mailto:contacto@subitus.com" target="_blank"&gt;Subitus&lt;/a&gt;.&lt;br&gt;
+                    Visitanos en:&lt;br&gt;
+                    subitus.com&lt;br&gt;
+                    Topografos 7. piso 12, Col. Escandón CDMX&lt;br&gt;
+                    México
+                  &lt;/address&gt;
+                </code>
+              </pre>
+              </div>
+
+
+            </div>
+
+          </div>
+          <div class="card mt-2" >
+            <div class="card-header">article</div>
+            <div class="card-body">
+              <p>
+                Especifica contenido autónomo e independiente.
+                <br>
+                Un artículo debe tener sentido por sí solo y debe ser posible distribuirlo independientemente del resto del sitio.
+                <br>
+                Fuentes potenciales del elemento:
+                <br>
+                <ul>
+                  <li>Publicación en el foro</li>
+                  <li>Entrada en el blog</li>
+                  <li>Noticia</li>
+                </ul>
+                Ejemplo:
+              </p>
+              <div class="p-2 mb-2" style="background-color: #d9f5e0;">
+                <article>
+                  <h2>Curso de Captivate</h2>
+                  <p>Adquiere los conocimientos necesarios para usar esta herramienta desde cero.</p>
+                </article>
+
+                <article>
+                  <h2>Curso de Storyline</h2>
+                  <p>Si estás buscando un curso de Storyline en línea, para principiantes y desde cero has llegado al lugar adecuado.</p>
+                </article>
+
+                <article>
+                  <h2>Curso de Moodle</h2>
+                  <p>Curso 100% práctico, de la mano de tutores certificados por Moodle (MCCC).</p>
+                </article>
+              </div>
+
+              <div class="container p-3 bg-info">
+                <pre>
+                  <code class="text-white">
+                    &lt;article&gt;
+                      &lt;h2&gt;Curso de Captivate&lt;/h2&gt;
+                      &lt;p&gt;Adquiere los conocimientos necesarios para usar esta herramienta desde cero.&lt;/p&gt;
+                    &lt;/article&gt;
+
+                    &lt;article&gt;
+                      &lt;h2&gt;Curso de Storyline&lt;/h2&gt;
+                      &lt;p&gt;Si estás buscando un curso de Storyline en línea, para principiantes y desde cero has llegado al lugar adecuado.&lt;/p&gt;
+                    &lt;/article&gt;
+
+                    &lt;article&gt;
+                      &lt;h2&gt;Curso de Moodle&lt;/h2&gt;
+                      &lt;p&gt;Curso 100% práctico, de la mano de tutores certificados por Moodle (MCCC).&lt;/p&gt;
+                    &lt;/article&gt;
+                  </code>
+                </pre>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <footer style="position:fixed;bottom:0px;width:100%;" class="d-flex justify-content-between bg-secondary">
+      <div id="Anterior" >
+        <a id="btn_anterior" href="formularios.html"><button type="button" class="btn btn-primary">Anterior</button></a>
+      </div>
+      <div id="Siguiente" >
+        <a id="btn_siguiente" href="eventos.html"><button type="button" class="btn btn-primary">Siguiente</button></a>
+      </div>
+
+    </footer>
+  </body>
+
+</html>

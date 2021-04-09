@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Plantilla Scorm</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+  <body>
+    <div id="header" class="jumbotron text-center">
+      <h1>Tablas</h1>
+      <p>Las tablas HTML permiten a los desarrolladores web organizar los datos en filas y columnas.</p>
+    </div>
+
+    <div id="content" class="container mb-5">
+      <div class="row">
+        <p>La etiqueta <code>&lt;table&gt;</code> define una tabla HTML.
+          <br>
+          Cada fila de la tabla se define con una etiqueta <code>&lt;tr&gt;</code>.
+          <br>
+          Cada encabezado de tabla se define con una etiqueta <code>&lt;th&gt;</code>.
+          <br>
+          Cada celda / datos de la tabla se define con una etiqueta <code>&lt;td&gt;</code>.
+          <br>
+          De forma predeterminada, el texto de los elementos <code>&lt;th&gt;</code> está en negrita y está centrado.
+          <br>
+          De forma predeterminada, el texto de los elementos <code>&lt;td&gt;</code> es regular y está alineado a la izquierda.<br>
+
+
+        </p>
+
+      </div>
+      <div class="row">
+        <div class="col">
+          <table class="table-striped mt-5" style="width:100%">
+            <tr>
+              <th>Nombre</th>
+              <th>Apellido</th>
+              <th>Edad</th>
+            </tr>
+            <tr>
+              <td>Juan</td>
+              <td>Álvarez</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Martha</td>
+              <td>Lugo</td>
+              <td>24</td>
+            </tr>
+          </table>
+
+        </div>
+        <div class="col">
+          <div class="container mt-2 p-3 bg-info">
+            <pre>
+              <code class="text-white">
+                &lt;table class="table-striped mt-5" style="width:100%"&gt;
+                  &lt;tr&gt;
+                    &lt;th&gt;Nombre&lt;/th&gt;
+                    &lt;th&gt;Apellido&lt;/th&gt;
+                    &lt;th&gt;Edad&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;Juan&lt;/td&gt;
+                    &lt;td&gt;Álvarez&lt;/td&gt;
+                    &lt;td&gt;50&lt;/td&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;Martha&lt;/td&gt;
+                    &lt;td&gt;Lugo&lt;/td&gt;
+                    &lt;td&gt;24&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              </code>
+            </pre>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <footer style="position:fixed;bottom:0px;width:100%;" class="d-flex justify-content-between bg-secondary">
+      <div id="Anterior" >
+        <a id="btn_anterior" href="imagenes.html"><button type="button" class="btn btn-primary">Anterior</button></a>
+      </div>
+      <div id="Siguiente" >
+        <a id="btn_siguiente" href="formularios.html"><button type="button" class="btn btn-primary">Siguiente</button></a>
+      </div>
+
+    </footer>
+  </body>
+
+</html>
