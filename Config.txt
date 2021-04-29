@@ -1,5 +1,0 @@
-Instalar servidor local
-npm install http-server -g
-
-en la ruta donde esta el index de la plantilla correr
-http-server 

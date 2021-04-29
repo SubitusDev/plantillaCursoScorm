@@ -1,0 +1,113 @@
+.btn_principal {
+  width: 250px;
+  height: 50px;
+  border: 0;
+  border-radius: 10px;
+  background: #FF5013;
+  font-weight: bold;
+}
+
+.btn_return {
+  width: 200px;
+  height: 45px;
+  border: 3px solid #FF5013;
+  color: #FF5013;
+  background: transparent;
+}
+
+.btn_return:hover {
+  background: #FF5013;
+}
+
+.btn_card {
+  width: 150px;
+  height: 40px;
+  border: 0;
+  background: #FF5013;
+  font-weight: bold;
+}
+
+.btn_card:hover {
+  background: #F8791A;
+}
+
+.btn_principal:hover {
+  background: #F8791A;
+}
+
+.contenedor {
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.contenedor .tarjeta {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.contenedor .tarjeta:hover {
+  height: 470px;
+}
+
+.contenedor .tarjeta .imgBx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 5px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.contenedor .tarjeta .imgBx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.contenedor .tarjeta .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.contenedor .tarjeta:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+.image-card-side {
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .image-card-side {
+    height: 250px;
+  }
+}
+
+@media (max-width: 367px) {
+  .img-fluid {
+    max-width: 200px;
+  }
+}

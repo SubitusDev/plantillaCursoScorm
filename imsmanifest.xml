@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--This is a Reload version 2.5.6 SCORM 1.2 Content Package document-->
+<!--Spawned from the Reload Content Package Generator - http://www.reload.ac.uk-->
+<manifest xmlns="http://www.imsproject.org/xsd/imscp_rootv1p1p2" xmlns:imsmd="http://www.imsglobal.org/xsd/imsmd_rootv1p2p1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:adlcp="http://www.adlnet.org/xsd/adlcp_rootv1p2" identifier="MANIFEST-C47CA293778784BB4ED6BB5D837BD944" xsi:schemaLocation="http://www.imsproject.org/xsd/imscp_rootv1p1p2 imscp_rootv1p1p2.xsd http://www.imsglobal.org/xsd/imsmd_rootv1p2p1 imsmd_rootv1p2p1.xsd http://www.adlnet.org/xsd/adlcp_rootv1p2 adlcp_rootv1p2.xsd">
+  <organizations default="ORG-FEDA59ECD4EB777BDEF4B1614F31DF1B">
+    <organization identifier="ORG-FEDA59ECD4EB777BDEF4B1614F31DF1B" structure="hierarchical">
+      <title>Curso bien perron</title>
+      <item identifier="ITEM-5F4E37785BEC410C16AA64BB24F7CDA7" isvisible="true" identifierref="RES-32743B090D2710D374E98F0EB0DC76BF">
+        <title>Plantilla Scorm</title>
+      </item>
+    </organization>
+  </organizations>
+  <resources>
+    <resource identifier="RES-32743B090D2710D374E98F0EB0DC76BF" type="webcontent" href="index.html" adlcp:scormtype="sco">
+      <file href="index.html" />
+      <file href="js/com.js" />
+      <file href="js/eval.js" />
+      <file href="js/files.js" />
+      <file href="js/main.js" />
+    </resource>
+  </resources>
+</manifest>
+

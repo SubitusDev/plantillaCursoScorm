@@ -1,2 +1,2 @@
-# plantillaCursoScorm
-Plantilla para el curso de Scorm ofrecido por Subitus
+# plantillaScorm
+/content - Se coloca el contenido de las paginas, solo las etiquetas internas del body
