@@ -51,7 +51,7 @@ function toggleMenu(){
     $('#modal-menu').modal('show');
 
   } else {
-    
+
     var imenu = document.getElementById("ico-menu");
     if(!iconmenu){
       changeClassIe9(imenu, "bi-layout-sidebar-inset");
@@ -133,9 +133,8 @@ function nextPage(){
     currentPage++;
     setProgress((currentPage+1)*100/files.length);
     readHtml(currentPage);
-    checkBtnNav('next')
-  } else {
-
+    checkBtnNav('prev');
+    checkPageMenu();
   }
 }
 
@@ -145,13 +144,12 @@ function prevPage(){
     setProgress((currentPage+1)*100/files.length);
     readHtml(currentPage);
     checkBtnNav('prev');
-  } else {
-
+    checkPageMenu();
   }
 }
 
 function goPage(page){
-  console.log("PAge: ",files.indexOf("./content/"+page));
+  //console.log("PAge: ",files.indexOf("./content/"+page));
   currentPage = files.indexOf("./content/"+page);
   changePage()
   closeModal();
@@ -189,7 +187,19 @@ function setProgress(progress){
 function changePage(){
   readHtml(currentPage);
   setProgress((currentPage+1)*100/files.length);
+  checkPageMenu();
   checkBtnNav('prev');
+}
+
+function checkPageMenu(){
+  var page = files[currentPage];
+  var itemmenu = document.getElementsByClassName('list-group-item-action');
+  for(i = 0; i < itemmenu.length; i++){
+    if(itemmenu[i].getAttribute( "data-link") == page){
+      removeClassLink();
+      itemmenu[i].classList.add("link-active");
+    }
+  }
 }
 
 function checkIsComplete(){
