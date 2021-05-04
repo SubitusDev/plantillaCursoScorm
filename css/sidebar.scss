@@ -29,6 +29,9 @@ body{
   -o-transition: margin .25s ease-out;
   transition: margin .25s ease-out;
   z-index: 9999;
+  position: fixed;
+  background-color: var(--colorwrap) !important;
+
 }
 
 #sidebar-wrapper .sidebar-heading {
