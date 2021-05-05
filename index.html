@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="./css/sidebar.scss" rel="stylesheet">
+  <link href="./css/loader.scss" rel="stylesheet">
   <link rel="stylesheet" href="./content/assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
@@ -22,8 +23,8 @@
       <!-- Sidebar -->
     <div class="h-100" id="sidebar-wrapper">
       <!--  -->
-      <div><img class="img-fluid img-logo" src="./img/logo.png" alt="Chania"></div>
-      <div class="sidebar-heading text-center ">Plantilla Scorm </div>
+      <div><img id="img_logo_course" class="img-fluid img-logo" src="" alt="logo curso"></div>
+      <div id="name_course" class="sidebar-heading text-center "></div>
       <hr class="bar-wrap">
       <div id="menu" class="list-group list-group-flush">
 
@@ -48,20 +49,22 @@
 
         <!-- Content -->
 
-
         <div  id="content" class="container-fluid p-0 h-100">
 
         </div>
-        <!-- /#NAv -->
+        <!-- /#Content -->
       </div>
   </div>
+
+  <!-- Modal menu Mobile -->
+
   <div class="modal fade" id="modal-menu" tabindex="" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog h-100" role="document">
             <div class="modal-content h-100">
 
                 <div class="modal-body">
-                  <div><img class="img-logo-modal" src="./img/logo.png" alt="Chania"></div>
-                  <div class="sidebar-heading text-center text-white"><h2>Plantilla Scorm</h2> </div>
+                  <div><img id="img_logo_course_mob" class="img-logo-modal" src="" alt="Chania"></div>
+                  <div class="sidebar-heading text-center text-white"><h2 id="name_course_mob"></h2> </div>
                     <div id="menu-mobile" class="nav flex-sm-column flex-row">
 
                     </div>
@@ -73,6 +76,15 @@
         </div>
     </div>
 
+    <div id="loader-content">
+        <div id="loader-center">
+            <div id="loader-center-absolute">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- /#Modal menu Mobile -->
 
     <!-- <footer style="position:fixed;bottom:0px;width:100%;" class="d-flex justify-content-between bg-secondary">
       <div id="prev" >
@@ -88,6 +100,6 @@
   <script src="./content/assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="./js/com.js"></script>
   <script src="./js/eval.js"></script>
-  <script src="./js/files.js"></script>
+  <script src="./js/config.js"></script>
   <script src="./js/main.js"></script>
 </html>
