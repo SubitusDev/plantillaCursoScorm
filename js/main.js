@@ -21,7 +21,8 @@ function init(){
   loadConfig();
   checkConnectionLMS();
   loadMenu();
-  changePage()
+  setTimeout(function(){ changePage() }, 500);
+  //changePage()
 }
 
 /****
@@ -48,6 +49,8 @@ function setTemplateColors(){
   var root = document.documentElement;
   if(template.color_nav != "")root.style.setProperty('--colornav',template.color_nav);
   if(template.color_menu != "")root.style.setProperty('--colorwrap',template.color_menu);
+  if(template.color_nav_text != "")root.style.setProperty('--colornavtext',template.color_nav_text);
+  if(template.color_menu_text != "")root.style.setProperty('--colorwraptext',template.color_menu_text);
   if(template.color_bar_progress != "")root.style.setProperty('--colorbarprogress',template.color_bar_progress);
   if(template.color_link_menu_active != "")root.style.setProperty('--colorlinkactive',template.color_link_menu_active);
   if(template.color_border_menu_active != "")root.style.setProperty('--colorborderleft',template.color_border_menu_active);
@@ -304,11 +307,22 @@ function checkPageMenu(){
   var page = files[currentPage];
   var itemmenu = document.getElementsByClassName('list-group-item-action');
   for(i = 0; i < itemmenu.length; i++){
-    if(itemmenu[i].getAttribute( "data-link") == page){
+    console.log("checkPageMenu1: ", itemmenu[i]);
+    var link = "./content/"+itemmenu[i].getAttribute( "data-link");
+    if( link == page){
+      console.log("checkPageMenu2: ", i);
+      var element = itemmenu[i];
       removeClassLink();
-      itemmenu[i].classList.add("link-active");
+      element.classList.add("link-active");
+      checkVisited(element);
     }
   }
+}
+
+// <i class="float-right bi bi-patch-check-fill"></i>
+function checkVisited(element){
+  var text ='<i class="bi bi-check-circle pr-2 check-page"></i>' + element.textContent;
+  element.innerHTML = text;
 }
 
 function checkIsComplete(){

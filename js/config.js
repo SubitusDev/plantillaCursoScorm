@@ -19,14 +19,16 @@ Loaders: default, circle, ring, dual-ring, ellipsis, facebook, grid, heart, hour
 var template = {
   course: "Plantilla Scorm",
   image: "./img/logo.png",
-  loader: "grid",
+  loader: "ellipsis",
   color_loader_bg: "#dea478",
   color_loader: "#fed",
-  color_nav: "#dea478",
-  color_menu: "#dea478",
-  color_bar_progress: "#fed",
+  color_nav: "transparent",
+  color_nav_text: "#fff",
+  color_menu: "#fff",
+  color_menu_text: "#000",
+  color_bar_progress: "red",
   color_link_menu_active: "#fed",
-  color_border_menu_active: "#fdd",
+  color_border_menu_active: "#000",
 };
 
 /*

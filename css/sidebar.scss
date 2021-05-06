@@ -1,6 +1,8 @@
 :root {
   --colornav: #e21d81;
+  --colornavtext: #fff;
   --colorwrap: #e21d81;
+  --colorwraptext: #fff;
   --colorhover: rgb(255,255,255,.2);
   --colorborderleft:rgb(239,219,235, .5);
   --colorbarprogress: #FF5013;
@@ -20,6 +22,10 @@ body{
     overflow: hidden;
  }
 
+ .navbar {
+   z-index: 999999999999 !important;
+ }
+
 #sidebar-wrapper {
   max-width: var(--widthimg);
   min-height: 100vh;
@@ -28,7 +34,7 @@ body{
   -moz-transition: margin .25s ease-out;
   -o-transition: margin .25s ease-out;
   transition: margin .25s ease-out;
-  z-index: 9999;
+  z-index: 99999999999;
   position: fixed;
   background-color: var(--colorwrap) !important;
 
@@ -63,17 +69,18 @@ body{
 
 .bg-sub-nav{
   background-color: var(--colornav) !important;
-  color: white !important;
+  color: var(--colornavtext) !important;
+
 }
 
 .bg-sub-wrap{
   background-color: var(--colorwrap) !important;
-  color: white !important;
+  color: var(--colorwraptext) !important;
 }
 
 .list-group-item {
   background-color: var(--colorwrap) !important;
-  color: white !important;
+  color: var(--colorwraptext) !important;
   border: none !important;
 }
 
@@ -105,6 +112,10 @@ body{
 
 .btn:focus {
     box-shadow: none !important;
+}
+
+.check-page{
+  color: green;
 }
 
 /*MODAL MENU PHONE STYLES*/
